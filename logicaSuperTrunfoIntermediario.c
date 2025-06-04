@@ -243,14 +243,15 @@ case 1:
         printf("População da Argentina: %lu\n", populacao2);
         printf("O Brasil venceu!\n");
     }
-        else if (populacao1 == populacao2){
-            printf("Houve um empate\n");
-        }
-        else {
+        else if (populacao1 < populacao2){
             printf("População do Brasil: %lu\n", populacao1);
             printf("População da Argentina: %lu\n", populacao2);
             printf("A Argentina venceu!\n");
         }
+        else {
+                printf("Houve um empate\n");
+        }
+       
     break;
 
 case 2:
@@ -258,14 +259,16 @@ case 2:
         printf("Área do Brasil: %.2f km²\n", area1);
         printf("Área da Argentina: %.2f km²\n", area2);
         printf("O Brasil venceu!\n");
-    }   else if (area1 == area2){
-            printf("Houve um empate\n");
-    }
-        else {
+    }   
+         else if (area1 < area2){
              printf("Área do Brasil: %.2f km²\n", area1);
              printf("Área da Argentina: %.2f km²\n", area2);
              printf("A Argentina venceu!\n");
         }
+        else  {
+            printf("Houve um empate\n");
+    }
+       
     break;
 
 case 3:
@@ -274,13 +277,16 @@ case 3:
         printf("PIB do Brasil: %.2f bilhões de reais\n", PIB1);
         printf("PIB da Argentina: %.2f bilhões de reais\n", PIB2);
         printf("O Brasil venceu!\n");
-    }   else if (PIB1 == PIB2){
-            printf("Houve um empate\n");
+    }   else if (PIB1 < PIB2){
+        printf("PIB do Brasil: %.2f bilhões de reais\n", PIB1);
+        printf("PIB da Argentina: %.2f bilhões de reais\n", PIB2);
+        printf("A Argentina venceu!\n"); 
     }
-        else {
-            printf("PIB do Brasil: %.2f bilhões de reais\n", PIB1);
-            printf("PIB da Argentina: %.2f bilhões de reais\n", PIB2);
-            printf("A Argentina venceu!\n");
+        else { 
+        
+        printf("Houve um empate\n");
+   
+               
         }
     break;
 
@@ -290,14 +296,16 @@ case 4:
         printf("Pontos Turísticos do Brasil: %d\n", pontosTuristicos1);
         printf("Pontos Turísticos da Argentina: %d\n", pontosTuristicos2);
         printf("O Brasil venceu!\n");
-    }   else if (pontosTuristicos1== pontosTuristicos2){
-            printf("Houve um empate\n");
+    }   else if (pontosTuristicos1 < pontosTuristicos2){
+       printf("Pontos Turísticos do Brasil: %d\n", pontosTuristicos1);
+       printf("Pontos Turísticos da Argentina: %d\n", pontosTuristicos2);
+       printf("A Argentina venceu!\n");  
     }
         else {
-            printf("Pontos Turísticos do Brasil: %d\n", pontosTuristicos1);
-            printf("Pontos Turísticos da Argentina: %d\n", pontosTuristicos2);
-            printf("A Argentina venceu!\n");
-        }
+              
+        printf("Houve um empate\n");
+    }
+       
     break;
 
 case 5:
@@ -306,17 +314,19 @@ case 5:
         printf("Densidade Populacional do Brasil: %.2lf hab/km²\n", densidadePopulacional1);
         printf("Densidade Populacional da Argentina: %.2lf hab/km²\n", densidadePopulacional2);
         printf("O Brasil venceu!\n");
-    }   else if (densidadePopulacional1 == densidadePopulacional2){
-            printf("Houve um empate\n");
-    }
-        else {
-            printf("Densidade Populacional do Brasil: %.2lf hab/km²\n", densidadePopulacional1);
-            printf("Densidade Populacional da Argentina: %.2lf hab/km²\n", densidadePopulacional2);
-            printf("A Argentina venceu!\n");
+    }   else if (densidadePopulacional1 > densidadePopulacional2){
+        printf("Densidade Populacional do Brasil: %.2lf hab/km²\n", densidadePopulacional1);
+        printf("Densidade Populacional da Argentina: %.2lf hab/km²\n", densidadePopulacional2);
+        printf("A Argentina venceu!\n");
         }
+        else {
+        printf("Houve um empate\n");
+    }
+                    
     break;
     default:
     printf("Opção inválida!\n");
    }
+   return 0;
 }
     
