@@ -12,7 +12,7 @@ int main() {
     // Você pode utilizar o código do primeiro desafio
     //variáveis das cartas
 
- char estado1[20], estado2[20];
+    char estado1[20], estado2[20];
     char codigo1[20], codigo2[20];
     char cidade1[20], cidade2[20];
     unsigned long int populacao1, populacao2; //alterado para unsigned long int
@@ -148,7 +148,6 @@ int main() {
     printf("3. Para selecionar o PIB\n");
     printf("4. Para selecionar o número de pontos turísticos\n");
     printf("5. Para selecionar a densidade demográfica\n");
-    printf("Escolha uma opção: ");
     scanf("%d", &opcao);
    
 
